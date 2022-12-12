@@ -1,3 +1,6 @@
+// I was inspired by Professor Cotter and Computing Masterclass(https://www.youtube.com/watch?v=62SbexSgQIw&ab_channel=ComputingMasterclass)'s code while writing this program and would like to give them the due credit.
+
+
 let serial;                             // variable to hold an instance of the serialport library
 let portName = '/dev/tty.usbmodem1101';  // fill in your serial port name here
 let inData;                             // for incoming serial data
