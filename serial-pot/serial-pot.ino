@@ -4,20 +4,22 @@ void setup() {
  
 void loop() {
   // read the input pin:
-  int potentiometer = analogRead(A0);                  
-  // remap the pot value to fit in 1 byte:
-  int mappedPot = map(potentiometer, 0, 1023, 0, 255); 
+  int rightsensor = analogRead(A1);                  
   // print it out the serial port:
-  Serial.println("potentiometer");
+  Serial.println("rightsensor");
 //  delay(50);
-  Serial.println(mappedPot);                             
-  // slight delay to stabilize the ADC:
-//  delay(50);               
+  Serial.println(rightsensor); 
+            
 
+int leftsensor = analogRead(A0);
+  Serial.println("leftsensor");
+//  delay(50);
+  Serial.println(leftsensor);
+//  delay(50);
 
-  int button = digitalRead(4);
+  int button = digitalRead(12);
   Serial.println("button");
 //  delay(50);
   Serial.println(button);
-//  delay(50);
+ delay(50);
 }
